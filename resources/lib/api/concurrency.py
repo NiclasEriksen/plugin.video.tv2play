@@ -57,7 +57,7 @@ class ConcurrencyLock:
     def __save(self):
         assert self.concurrencyMeta != None
         with open(self.file_path, "wb") as concurrency_file:
-            concurrency_file.write(bytearray(pickle.dumps(self.concurrencyMeta)))
+            concurrency_file.write(pickle.dumps(self.concurrencyMeta))
 
     def __delete(self):
         if os.path.exists(self.file_path):

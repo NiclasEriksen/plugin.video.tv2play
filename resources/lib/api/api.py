@@ -9,10 +9,7 @@ from resources.lib.logging import LOG
 from .exception import LoginException, HTTPException, ConcurrencyLimitViolationException, NoTypeException
 from .models import Video, PlayBack, Serie, Page, Structure, Station, User, Season
 from .concurrency import ConcurrencyLock
-try:
-    from urllib.parse import urlparse, parse_qs
-except ImportError:
-    from urlparse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs
 
 class PlayAPI:
     def __init__(self):

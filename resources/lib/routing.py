@@ -1,9 +1,5 @@
 import sys
-try:
-    from urllib.parse import parse_qsl
-except ImportError:
-    from urlparse import parse_qsl
-    from urllib import urlencode
+from urllib.parse import parse_qsl, urlencode
 import xbmcgui
 import xbmc
 import xbmcaddon

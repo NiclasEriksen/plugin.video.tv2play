@@ -8,7 +8,7 @@ class Logger:
         self.__log(msg, xbmc.LOGERROR)
 
     def info(self, msg):
-        self.__log(msg, xbmc.LOGNOTICE)
+        self.__log(msg, xbmc.LOGINFO)
 
     def warning(self, msg):
         self.__log(msg, xbmc.LOGWARNING)
